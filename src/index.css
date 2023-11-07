@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+td{
+  border: 2px dotted black;
+  padding: 5px;
+}
