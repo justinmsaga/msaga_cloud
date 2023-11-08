@@ -13,4 +13,6 @@ body{
 
 .active{
   background-color: #fff;
+  border: none;
+  border-radius: 0;
 }

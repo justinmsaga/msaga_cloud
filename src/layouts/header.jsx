@@ -9,9 +9,9 @@ export default function Header(){
                 </h1>
             </header>
             <nav className="mt-5 w-full flex justify-between border border-x-0 border-t-0 border-b-2">
-                <NavLink to="archive" className={"bg-rose-600 px-1"}> archive </NavLink>
-                <NavLink to="curation" className={"bg-rose-600 px-1"}> curations </NavLink>
-                <NavLink to="creation" className={"bg-rose-600 px-1"}> creations </NavLink>
+                <NavLink to="archive" className={"bg-rose-600 px-1 border rounded-full"}> archive </NavLink>
+                <NavLink to="curation" className={"bg-rose-600 px-1 border rounded-full"}> curations </NavLink>
+                <NavLink to="creation" className={"bg-rose-600 px-1 border rounded-full"}> creations </NavLink>
             </nav>
             <main className="pt-5">
                 <Outlet />

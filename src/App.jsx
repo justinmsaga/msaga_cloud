@@ -1,5 +1,6 @@
 import Header from './layouts/header'
 import Archive from './pages/Archive'
+import Click from './pages/Click'
 import Creation from './pages/Creation'
 import Curation from './pages/Curation'
 import Home from './pages/Home'
@@ -12,7 +13,7 @@ const router = createHashRouter(
         <Route path="Creation" element={<Creation />} />
         <Route path="Curation" element={<Curation />} />
         <Route path="Archive" element={<Archive />} />
-        <Route path="*" element={<Home/>} />
+        <Route path="*" element={<Click />} />
       </Route>
   )
 )
