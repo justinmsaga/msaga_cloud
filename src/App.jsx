@@ -3,17 +3,17 @@ import Archive from './pages/Archive'
 import Creation from './pages/Creation'
 import Curation from './pages/Curation'
 import Home from './pages/Home'
-import { createBrowserRouter, Route, createRoutesFromElements, RouterProvider, BrowserRouter, Routes } from 'react-router-dom'
+import { createHashRouter,Route, createRoutesFromElements, RouterProvider } from 'react-router-dom'
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Header />}>
-      <Route index element={<Home />} />
-      <Route path="Creation" element={<Creation/>} />
-      <Route path="Curation" element={<Curation/>} />
-      <Route path="Archive" element={<Archive/>} />
-      <Route path="*" element={<Home/>} />
-    </Route>
+      <Route path="/" element={<Header />}>
+        <Route index element={<Home />} />
+        <Route path="Creation" element={<Creation />} />
+        <Route path="Curation" element={<Curation />} />
+        <Route path="Archive" element={<Archive />} />
+        <Route path="*" element={<Home/>} />
+      </Route>
   )
 )
 
