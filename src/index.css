@@ -6,3 +6,11 @@ td{
   border: 2px dotted black;
   padding: 5px;
 }
+
+body{
+  background-color: rgb(154, 174, 194);
+}
+
+.active{
+  background-color: #fff;
+}
