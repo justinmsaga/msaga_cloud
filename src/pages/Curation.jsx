@@ -2,7 +2,7 @@ export default function Curation() {
 
     return (
         <div>
-            <h1 className="flex justify-center">Curation</h1>
+            <h1 className="flex justify-center">Present Curiosities</h1>
             <br />
             <a href="https://github.com/justinmsaga"><h2 className="flex justify-end bg-red-700 p-1">always prototyping...click this bar for current experiments...we believe in open source here</h2></a>
             <br />

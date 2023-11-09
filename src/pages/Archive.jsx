@@ -2,7 +2,7 @@
 export default function Archive() {
     return (
         <div>
-            <h1 className="flex justify-start">Past works</h1>
+            <h1 className="flex justify-center">Past Works</h1>
             <div className="flex justify-evenly">
                 <div className="grid justify-items-center">
                     <h2 className="text-5xl p-3">🎧</h2>
