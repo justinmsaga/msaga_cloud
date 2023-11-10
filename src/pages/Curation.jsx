@@ -7,7 +7,7 @@ export default function Curation() {
             <a href="https://github.com/justinmsaga"><h2 className="flex justify-end bg-red-700 p-1">always prototyping...click this bar for current experiments...we believe in open source here</h2></a>
             <br />
             <p>
-                a thesis about my creative practice of <a href="#" className="bg-orange-500 p-1">curation as craft</a>
+                a thesis about my creative practice of <span className="bg-orange-500 p-1">curation as craft</span>
             </p>
             <br />
             <div className="flex justify-center ">
