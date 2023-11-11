@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import Pic from "../components/Pic"
 import { useState } from "react"
+import Footer from "../layouts/footer"
 
 export default function Home() {
     const [showImg, setShowImg] = useState(false)
@@ -20,24 +21,29 @@ export default function Home() {
             <br />
             <div className="flex justify-between">
                 <button onClick={dispImg} className="grid justify-items-center">
-                    <p>{showImg ? "" : "👉"}me{showImg ? " " : "👈"}</p>
-                    <img src="https://arweave.net/A40GVhPg7cWzuHf7gugzc1lh70iYMWAlQ-zAfwBHWsc"
-                        alt="stick figure with locs and a skateboard mouth shoing the peace sign on the left hand"
-                        width="50%" />
+                    <Pic
+                        desc={`${showImg ? "" : "👉"}me${showImg ? " " : "👈"}`}
+                        link="A40GVhPg7cWzuHf7gugzc1lh70iYMWAlQ-zAfwBHWsc"
+                        alt="stick figure with locs and a skateboard mouth holding the peace sign on the left hand"
+                        dime={`${showImg ? "w-2/3 md:w-2/5" : "w-3/5 md:w-1/5"}`}
+                        pos="center"
+                    />
                 </button>
                 {showImg &&
                     <Pic
                         desc="my creative alter ego"
                         link="4GJuqrg_zxEnSISGc-djC40eN3li_OoZFUtv2xlLr9Y"
-                        w="30%"
+                        alt="stick figure with an afro and skateboard mouth holding the peace sign on the right hand"
+                        dime="w-2/5 md:w-1/4"
+                        pos="center"
                     />
                 }
             </div>
-            <a href="https://github.com/justinmsaga/msaga_cloud" className="absolute bottom-0 w-full">
-                <h2 className="flex justify-end bg-red-700 p-1 rounded-lg">
-                    currently under construction...click this for site source code...we believe in open source here
-                </h2>
-            </a>
+            <Footer
+                begin="currently under construction"
+                where="site source code"
+                link="https://github.com/justinmsaga/msaga_cloud"
+            />
         </div>
     )
 }

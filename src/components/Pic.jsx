@@ -1,8 +1,8 @@
-export default function Pic(props){
+export default function Pic({link, desc,dime, pos, alt}){
    return(
-   <div className="grid justify-items-end">
-        <p>{props.desc}</p>
-        <img src={`https://arweave.net/${props.link}`} width={props.w} />
+   <div className={`grid justify-items-${pos}`}>
+        <img src={`https://arweave.net/${link}`} className={dime} alt={alt}/>
+        <p>{desc}</p>
    </div> 
    )
 }
