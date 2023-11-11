@@ -3,7 +3,7 @@ import Pic from "../components/Pic"
 import { useState } from "react"
 
 export default function Home() {
-    const [showImg, setShowImg] = useState(true)
+    const [showImg, setShowImg] = useState(false)
 
     const dispImg = () => setShowImg(!showImg)
 
