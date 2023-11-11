@@ -38,8 +38,8 @@ export default function Creation() {
                     desc="my first poly art"
                     link="goE9lQYG-HwQPTi0nF8xZCku_TILhg_nwOvU1iROGvQ"
                     alt="polygon art of Guy-Manuel from Daft Punk"
-                    dime="w-3/5 md:w-2/5"
-                    pos="end"
+                    dime="h-5/5 w-3/5 md:w-2/5"
+                    pos="center"
                 />
             }
         </div>

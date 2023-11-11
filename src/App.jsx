@@ -1,4 +1,4 @@
-import Header from './layouts/header'
+import Header from './layouts/Header'
 import Archive from './pages/Archive'
 import Click from './pages/Click'
 import Creation from './pages/Creation'

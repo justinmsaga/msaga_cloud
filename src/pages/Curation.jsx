@@ -1,4 +1,4 @@
-import Footer from "../layouts/footer";
+import Footer from "../layouts/Footer";
 
 export default function Curation() {
 

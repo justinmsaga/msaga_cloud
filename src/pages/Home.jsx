@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import Pic from "../components/Pic"
 import { useState } from "react"
-import Footer from "../layouts/footer"
+import Footer from "../layouts/Footer"
 
 export default function Home() {
     const [showImg, setShowImg] = useState(false)
@@ -25,7 +25,7 @@ export default function Home() {
                         desc={`${showImg ? "" : "👉"}me${showImg ? " " : "👈"}`}
                         link="A40GVhPg7cWzuHf7gugzc1lh70iYMWAlQ-zAfwBHWsc"
                         alt="stick figure with locs and a skateboard mouth holding the peace sign on the left hand"
-                        dime={`${showImg ? "w-2/3 md:w-2/5" : "w-3/5 md:w-1/5"}`}
+                        dime={`${showImg ? "w-2/3 md:w-2/5" : "h-5/5 w-3/5 md:w-1/5"}`}
                         pos="center"
                     />
                 </button>
@@ -34,7 +34,7 @@ export default function Home() {
                         desc="my creative alter ego"
                         link="4GJuqrg_zxEnSISGc-djC40eN3li_OoZFUtv2xlLr9Y"
                         alt="stick figure with an afro and skateboard mouth holding the peace sign on the right hand"
-                        dime="w-2/5 md:w-1/4"
+                        dime="h-5/5 md:h-4/4 w-2/5 md:w-1/4"
                         pos="center"
                     />
                 }
