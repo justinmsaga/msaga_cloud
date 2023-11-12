@@ -25,7 +25,7 @@ export default function Home() {
                         desc={`${showImg ? "" : "👉"}me${showImg ? " " : "👈"}`}
                         link="A40GVhPg7cWzuHf7gugzc1lh70iYMWAlQ-zAfwBHWsc"
                         alt="stick figure with locs and a skateboard mouth holding the peace sign on the left hand"
-                        dime={`${showImg ? "h-2/5 w-2/3 md:w-2/5" : "h-5/5 w-3/5 md:w-1/5"}`}
+                        dime={`${showImg ? "h-3/3 md:h-5/5 w-2/3 md:w-2/5" : "h-5/5 w-3/5 md:w-1/5"}`}
                         pos="center"
                     />
                 </button>
