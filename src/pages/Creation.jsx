@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Pic from "../components/Pic"
+import LinkText from "../components/LinkText"
 
 export default function Creation() {
     const [showImg, setShowImg] = useState(false)
@@ -29,7 +30,10 @@ export default function Creation() {
                 <div>
                     <button onClick={dispImg}>
                         <h2 className="text-5xl p-5">🖥️</h2>
-                        <p>{showImg ? "👇" : "👉"}polygon art{showImg ? "👇" : "👈"}</p>
+                    <LinkText 
+                        show={showImg}
+                        text="polygon art"
+                    />
                     </button>
                 </div>
             </div>

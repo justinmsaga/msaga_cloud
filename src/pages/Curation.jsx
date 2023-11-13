@@ -6,7 +6,6 @@ export default function Curation() {
         <div>
             <h1 className="flex justify-center">Present Curiosities</h1>
             <br />
-            <br />
             <p>
                 a thesis about my creative practice of <span className="bg-orange-500 p-1">curation as craft</span>(loading)
             </p>
@@ -23,12 +22,6 @@ export default function Curation() {
                         <tr>
                             <td>archive of past work</td>
                             <td>how to sk8 and not die</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td>home bakers music club</td>
-                            <td>baked chronicles</td>
                         </tr>
                     </tbody>
                     <tbody>

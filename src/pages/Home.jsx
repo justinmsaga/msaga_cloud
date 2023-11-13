@@ -10,7 +10,7 @@ export default function Home() {
 
     return (
         <div>
-            <h1>hello! 🕺</h1>
+            <h1>hello!✌️</h1>
             <p className="flex justify-center">
                 my name is justin🛹<br />
                 a human exploring the intersection of technology💻, music🎧 and food🥐<br />
