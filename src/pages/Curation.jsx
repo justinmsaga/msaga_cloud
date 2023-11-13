@@ -34,7 +34,7 @@ export default function Curation() {
             </div>
             <br />
             <p className="flex justify-end">
-                sidenote: I use quotes to surround placeholder words when I can't think of the "right" word while writing...it is also an homage to Virgil Abloh<br />
+                sidenote: I use quotes to surround placeholder words when I can't think of the "right" word while writing...it is also an homage to Virgil Abloh
 
                 <span className="bg-[#ffef00] p-1">
                     r.i.p. to the 🐐

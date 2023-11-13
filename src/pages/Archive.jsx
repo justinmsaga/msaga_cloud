@@ -25,32 +25,31 @@ const vids = [
 
 export default function Archive() {
     const [videos, setVideos] = useState(vids)
-    const [showVid, setShowVid]= useState(false) 
+    const [showVid, setShowVid] = useState(false)
     const [vidSrc, setVidSrc] = useState("")
-    const [vidDesc, setVidDesc]= useState("")
+    const [vidDesc, setVidDesc] = useState("")
 
-    const updateDisp = (title) =>{
-        setVideos(preVids =>{
-            return preVids.map(vid =>{
-                    if(vid.title === title)  {
-                        return {...vid, display: !vid.display} 
-                    }
-                    else{
-                        return {...vid, display: false}
-                    }
+    const updateDisp = (title) => {
+        setVideos(preVids => {
+            return preVids.map(vid => {
+                if (vid.title === title) {
+                    return { ...vid, display: !vid.display }
+                }
+                else {
+                    return { ...vid, display: false }
+                }
             })
         })
     }
 
-    const updateVid = (newSrc, newDesc, title) =>{
+    const updateVid = (newSrc, newDesc, title) => {
         setVidDesc(prevVidDesc => {
-            if(prevVidDesc != newDesc){
+            if (prevVidDesc != newDesc) {
                 setShowVid(true)
                 setVidSrc(newSrc)
                 updateDisp(title)
                 return newDesc
-            }else
-            {
+            } else {
                 setShowVid(false)
                 setVidSrc("")
                 updateDisp("")
@@ -59,13 +58,13 @@ export default function Archive() {
         })
     }
 
-    const vidComps = videos.map(item =>{
-        return<Button 
-                id={item.title}
-                text={item.title}
-                click={() => updateVid(item.link, item.description, item.title)}
-                show={item.display}
-                />
+    const vidComps = videos.map(item => {
+        return <Button
+            id={item.title}
+            text={item.title}
+            click={() => updateVid(item.link, item.description, item.title)}
+            show={item.display}
+        />
     })
 
     return (
@@ -84,13 +83,13 @@ export default function Archive() {
                     </div>
                 </div>
             </div>
-            
+
             {showVid &&
-            <Video 
-                link={vidSrc}
-                desc={vidDesc}
-            />
-}
+                <Video
+                    link={vidSrc}
+                    desc={vidDesc}
+                />
+            }
         </div>
     )
 }

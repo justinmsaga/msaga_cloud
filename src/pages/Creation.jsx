@@ -1,11 +1,12 @@
 import { useState } from "react"
 import Pic from "../components/Pic"
 import LinkText from "../components/LinkText"
+import Button from "../components/Button"
 
 export default function Creation() {
     const [showImg, setShowImg] = useState(false)
 
-    const dispImg = () =>{
+    const dispImg = () => {
         setShowImg(!showImg)
     }
 
@@ -27,14 +28,13 @@ export default function Creation() {
                         <p>recipe zine</p>
                     </a>
                 </div>
-                <div>
-                    <button onClick={dispImg}>
-                        <h2 className="text-5xl p-5">🖥️</h2>
-                    <LinkText 
-                        show={showImg}
+                <div className="grid justify-items-center">
+                    <h2 className="text-5xl p-5">🖥️</h2>
+                    <Button
+                        click={dispImg}
                         text="polygon art"
+                        show={showImg}
                     />
-                    </button>
                 </div>
             </div>
             {showImg &&
