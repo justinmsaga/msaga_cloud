@@ -19,13 +19,13 @@ export default function Home() {
             <br />
             <Link to="*" className="flex justify-end">👉this means click here👈</Link>
             <br />
-            <div className="flex justify-between">
+            <div className="flex justify-evenly max-h-0">
                 <button onClick={dispImg}>
                     <Pic
                         desc={`${showImg ? "" : "👉"}me${showImg ? " " : "👈"}`}
                         link="A40GVhPg7cWzuHf7gugzc1lh70iYMWAlQ-zAfwBHWsc"
                         alt="stick figure with locs and a skateboard mouth holding the peace sign on the left hand"
-                        dime={`${showImg ? "h-3/3 md:h-5/5 w-2/3 md:w-2/5" : "h-5/5 w-3/5 md:w-1/5"}`}
+                        dime="max-h-[200px] md:max-h-[400px]"
                         pos="center"
                     />
                 </button>
@@ -34,7 +34,7 @@ export default function Home() {
                         desc="my creative alter ego"
                         link="4GJuqrg_zxEnSISGc-djC40eN3li_OoZFUtv2xlLr9Y"
                         alt="stick figure with an afro and skateboard mouth holding the peace sign on the right hand"
-                        dime="h-5/5 md:h-4/4 w-2/5 md:w-1/4"
+                        dime="max-h-[200px] md:max-h-[400px]"
                         pos="center"
                     />
                 }

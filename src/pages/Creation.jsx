@@ -1,6 +1,5 @@
 import { useState } from "react"
 import Pic from "../components/Pic"
-import LinkText from "../components/LinkText"
 import Button from "../components/Button"
 
 export default function Creation() {
