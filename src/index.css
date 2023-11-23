@@ -8,7 +8,8 @@ td{
 }
 
 body{
-  background-color: rgb(154, 174, 194);
+  background-image: linear-gradient(to right, white, grey);
+  /*background-color: rgb(154, 174, 194);*/
   font-family: Arial, Helvetica, sans-serif
 }
 
