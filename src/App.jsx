@@ -3,6 +3,7 @@ import Archive from './pages/Archive'
 import Click from './pages/Click'
 import Creation from './pages/Creation'
 import Curation from './pages/Curation'
+import Craft from './pages/Craft'
 import Home from './pages/Home'
 import { createHashRouter,Route, createRoutesFromElements, RouterProvider } from 'react-router-dom'
 
@@ -13,6 +14,7 @@ const router = createHashRouter(
         <Route path="Creation" element={<Creation />} />
         <Route path="Curation" element={<Curation />} />
         <Route path="Archive" element={<Archive />} />
+        <Route path="Craft" element={<Craft />} />
         <Route path="*" element={<Click />} />
       </Route>
   )

@@ -1,4 +1,5 @@
 import Footer from "../layouts/Footer";
+import {Link} from "react-router-dom";
 
 export default function Curation() {
 
@@ -7,7 +8,10 @@ export default function Curation() {
             <h1 className="flex justify-center">Present Curiosities</h1>
             <br />
             <p>
-                a thesis about my creative practice of <span className="bg-orange-500 p-1">curation as craft</span>(loading)
+                a thesis about my creative practice of 
+                <span className="bg-orange-500 p-1">
+                    <Link to="/Craft">curation as craft</Link>
+                </span>
             </p>
             <br />
             <div className="flex justify-center ">
