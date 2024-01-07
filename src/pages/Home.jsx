@@ -11,10 +11,11 @@ export default function Home() {
     return (
         <div>
             <h1>hello!✌️</h1>
-            <p className="flex justify-center">
-                my name is justin🛹<br />
-                a human exploring the intersection of technology💻, music🎧 and food🥐<br />
-                I do this by curating then creating "things"<br />
+            <p>
+                a thesis about my creative practice of 
+                <span className="bg-orange-500 p-1">
+                    <Link to="/Craft">curation as craft</Link>
+                </span>
             </p>
             <br />
             <Link to="*" className="flex justify-end">👉this means click here👈</Link>

@@ -6,14 +6,6 @@ export default function Curation() {
     return (
         <div>
             <h1 className="flex justify-center">Present Curiosities</h1>
-            <br />
-            <p>
-                a thesis about my creative practice of 
-                <span className="bg-orange-500 p-1">
-                    <Link to="/Craft">curation as craft</Link>
-                </span>
-            </p>
-            <br />
             <div className="flex justify-center ">
                 <table className="text-sm">
                     <thead >
